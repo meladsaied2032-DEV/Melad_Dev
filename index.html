@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href=".css">
+  <title>Melad Dev | Web Developer</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #020617;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #e5e7eb;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section, #home {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    #home {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #home h2 {
+      font-size: 2.5rem;
+    }
+
+    #home p {
+      margin-top: 15px;
+      color: #94a3b8;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+
+    #projects {
+      display: grid;
+      gap: 20px;
+    }
+
+    article {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    article:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+      text-align: left;
+    }
+
+    fieldset {
+      border: 1px solid #38bdf8;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    legend {
+      color: #38bdf8;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background: #1e293b;
+      color: white;
+    }
+
+    input:focus {
+      outline: 2px solid #38bdf8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <h1>Melad Dev</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div id="home">
+    <h2>Hi, I'm Melad Kamel</h2>
+    <p>Web Developer passionate about building modern websites.</p>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a web developer focused on creating clean, creative, and user-friendly websites.
+      I enjoy learning new technologies and improving my skills.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article>
+      <h3>Project One</h3>
+      <p>Description of the project.</p>
+    </article>
+
+    <article>
+      <h3>Project Two</h3>
+      <p>Description of the project.</p>
+    </article>
+
+    <article>
+      <h3>Project Three</h3>
+      <p>Description of the project.</p>
+    </article>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <fieldset>
+        <legend>How can I help you?</legend>
+
+        <label for="username">User name:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+
+      </fieldset>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2026 Melad Kamel</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+ *{ margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #020617;
+      position: sticky;
+      top: 0;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin-left: 20px;
+      color: #e5e7eb;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section, #home {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    #home {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #home h2 {
+      font-size: 2.5rem;
+    }
+
+    #home p {
+      margin-top: 15px;
+      color: #94a3b8;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+
+    #projects {
+  display: grid;
+  /* بيعمل عواميد تلقائية بعرض 300px وممكن تزيد */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px;
+}
+
+    article {
+      background: #020617;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    article:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin: 10px 0;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+      text-align: left;
+    }
+
+    fieldset {
+      border: 1px solid #38bdf8;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    legend {
+      color: #38bdf8;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+      background: #1e293b;
+      color: white;
+    }
+
+    input:focus {
+      outline: 2px solid #38bdf8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #020617;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+      }
+
+      nav {
+        margin-top: 10px;
+      }
+    }
+    html {
+  scroll-behavior: smooth;
+}
+.submit-btn[type="submit"] {
+  background: #38bdf8;
+  color: #020617;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  width: 100%;
+}
+.submit-btn[type="submit"]:hover {
+  background: #0ea5e9;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
+}
+/* اجعل كل العناوين (Labels) في سطر لوحدها */
+label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #38bdf8; /* اللون اللي أنت مختاره */
+  text-align: left;
+}
+
+/* اجعل كل المدخلات (Inputs & Textarea) تاخد العرض الكامل وما تسمحش بحد جنبها */
+input, textarea {
+  display: block;
+  width: 100%; /* عشان يملوا الـ fieldset بالعرض */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #1e293b;
+  color: white;
+  box-sizing: border-box; /* أهم خاصية عشان الـ padding ما يزودش العرض */
+}
+
+/* لو عايز الزرار يملى العرض برضه */
+.submit-btn {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
